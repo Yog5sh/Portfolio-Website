@@ -68,6 +68,7 @@ h1 {
     top: 0;
     left: 0;
     box-shadow: 0 1px 0 0;
+    background-color: var(--bColor);
 
 }
 
@@ -148,7 +149,7 @@ h1 {
     display: flex;
     flex-direction: column;
     color: white;
-  align-items: center;
+    align-items: center;
     bottom: 0;
     right: 0;
 }
@@ -166,7 +167,7 @@ h1 {
     color: var(--primary);
 }
 
-.right-icon a .fa-twitter{
+.right-icon a .fa-twitter {
     margin-bottom: 1.5rem;
 }
 
@@ -193,7 +194,7 @@ h1 {
 
 .content {
     width: 80%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -203,46 +204,130 @@ h1 {
 
 
 .content .section {
-    width: 70%;
-    padding-top: 20rem;
-
+    width: 60%;
+    padding-top: 18rem;
 }
 
 
-.content .about .details p:nth-child(1) {
+.content .home .details p:nth-child(1) {
     color: var(--primary);
 
     font-family: "sfMono";
 }
 
-.content .about .details h1:nth-child(2) {
+.content .home .details h1:nth-child(2) {
     color: var(--namesecondary);
     font-size: 4.8rem;
     margin-top: .5rem;
 }
 
-.content .about .details h1:nth-child(3) {
+.content .home .details h1:nth-child(3) {
     color: var(--secondary);
     font-size: 4.2rem;
 
 }
 
-.content .about .details p:nth-child(4) {
+.content .home .details p:nth-child(4) {
     color: var(--secondary);
     width: 40%;
     margin-top: 1rem;
     text-justify: auto;
-
     letter-spacing: .02rem;
 }
 
-.content .about .details p:nth-child(5) {
+.content .home .details p:nth-child(5) {
     color: var(--secondary);
     margin-top: .8rem;
     letter-spacing: .02rem;
 }
 
-.content .about .details button {
+.content .home .details button {
 
     margin: 2.5rem 0 0 0;
 }
+
+
+
+
+
+/* ---------- About section ---------- */
+
+
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+   
+}
+
+.title {
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+
+.title a {
+    margin-left: 2rem;
+    font-size: 2rem;
+    font-family: "sfMono";
+}
+
+.section-title {
+    margin-bottom: 1.5rem;
+    width: 45%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+
+.section-title .title-line {
+    width: 1px;
+    height: 18rem;
+    rotate: 90deg;
+    background-color: var(--namesecondary);
+}
+
+.about-details {
+    width: 62%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+
+.about-details p {
+    color: var(--secondary);
+    line-height: 1.6rem;
+    text-justify: auto;
+    letter-spacing: .02rem;
+    font-size: 1.1rem;
+}
+
+
+
+.photo-container .photo img {
+    width: 16rem;
+    aspect-ratio: 1;
+    position: relative;
+    border-radius: 5px;
+}
+
+
+.photo-container .photo{
+  position: relative;
+}
+
+.photo-container .photo::before{
+    content: "";
+    position: absolute;
+    border: 2px solid var(--primary);
+    left: 8px;
+    border-radius: 5px;
+    top: 8px;
+    width: 16rem;
+    aspect-ratio: 1;
+}
+
