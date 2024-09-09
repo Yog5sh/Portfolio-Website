@@ -36,7 +36,7 @@
     --primary: rgb(100, 255, 218);
     --namesecondary: #CCD6F6;
     --secondary: rgb(136, 146, 176);
-    --card-color:#112240;
+    --card-color: #112240;
 
 }
 
@@ -260,7 +260,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
-   
+
 }
 
 .title {
@@ -306,7 +306,7 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    
+
 }
 
 .about-details p {
@@ -327,11 +327,11 @@ h1 {
 }
 
 
-.photo-container .photo{
-  position: relative;
+.photo-container .photo {
+    position: relative;
 }
 
-.photo-container .photo::before{
+.photo-container .photo::before {
     content: "";
     position: absolute;
     border: 2px solid var(--primary);
@@ -342,18 +342,19 @@ h1 {
     aspect-ratio: 1;
 }
 
-.lang-grid{
+.lang-grid {
     display: flex;
     gap: 2rem;
 }
 
-.col .lang{
+.col .lang {
     position: relative;
     margin-left: .2rem;
     font-size: .9rem;
     font-family: "sfMono";
 }
-.col .lang::before{
+
+.col .lang::before {
     content: "▹";
     left: 0;
     color: var(--primary);
@@ -366,19 +367,20 @@ h1 {
 
 /* ---------------- Experience css ---------------- */
 
-.project{
+.project {
     margin-top: 8rem;
 }
 
-.card{
+.card {
     display: flex;
-   
+
 }
 
-.img{
+.img {
     position: relative;
 }
-.img::before{
+
+.img::before {
     content: "";
     background-color: var(--card-color);
     z-index: 2;
@@ -387,49 +389,49 @@ h1 {
     border: 1px solid var(--primary);
     width: 100%;
     opacity: .4;
-  height: 100%;
+    height: 100%;
     position: absolute;
     border-radius: 5px;
 }
 
-.img:hover::before{
- background-color: transparent;
+.img:hover::before {
+    background-color: transparent;
 
 }
 
 
 
-.img img{
+.img img {
     width: 500px;
     height: 100%;
     border-radius: 5px;
 }
 
-.project-content{
+.project-content {
     display: flex;
     flex-direction: column;
-  
-align-items: flex-end;
-position: relative;
-justify-content: center;
-gap: 1rem;
+
+    align-items: flex-end;
+    position: relative;
+    justify-content: center;
+    gap: 1rem;
 }
 
 
-.project-content .outline{
-font-family: "sfMono";
-font-size: .8rem;
-color: var(--primary);
+.project-content .outline {
+    font-family: "sfMono";
+    font-size: .8rem;
+    color: var(--primary);
 }
 
 
-.project-content .title{
+.project-content .title {
     margin-top: -.6rem;
     color: var(--namesecondary);
-font-size: 2rem;
+    font-size: 2rem;
 }
 
-.project-content .detail{
+.project-content .detail {
     text-justify: auto;
     text-align: end;
     width: 110%;
@@ -442,7 +444,7 @@ font-size: 2rem;
     color: var(--secondary);
 }
 
-.tech-stack{
+.tech-stack {
     display: flex;
     list-style: none;
     gap: 1rem;
@@ -451,16 +453,17 @@ font-size: 2rem;
     color: var(--secondary);
 }
 
-.links{
-display: flex;
-gap: 1rem;
+.links {
+    display: flex;
+    gap: 1rem;
 
 }
-.links i{
+
+.links i {
     font-size: 1.2rem;
 }
 
-.links i:hover{
+.links i:hover {
     color: var(--primary);
 }
 
@@ -469,18 +472,120 @@ gap: 1rem;
 /* ----------- projects other css------------- */
 
 
-.project1{
+.project1 {
     margin-top: 4rem;
 }
-.project2 .project-content{
-align-items: flex-start;
+
+.project2 .project-content {
+    align-items: flex-start;
 }
 
 
-.project2 .project-content .detail{
+.project2 .project-content .detail {
     text-align: start;
 }
 
 
 
 
+/* -----------------------  some other projects css started ------------------------ */
+
+
+.project-title {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-title .title {
+    font-size: 2rem;
+    color: var(--namesecondary);
+    font-family: "cSemibold";
+}
+
+.project-title .archive {
+    color: var(--primary);
+    font-family: "sfMono";
+    font-size: .8rem;
+}
+
+
+
+
+/* ------------------------ small projects grid --------------------- */
+
+.more-project-grid {
+    display: flex;
+    margin-top: 4rem;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+
+
+.cards {
+    width: 290px;
+    background-color: var(--card-color);
+}
+
+.inner-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+
+
+.inner-card .icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inner-card .icons img {
+    width: 35px;
+}
+
+.inner-card .links a i {
+    color: var(--secondary);
+}
+
+.inner-card .links a i:hover {
+    color: var(--primary);
+}
+
+
+.inner-detail {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+
+.inner-detail .title {
+    margin-top: .4rem;
+    font-size: 1.4rem;
+    font-family: "cSemibold";
+    color: var(--namesecondary);
+}
+
+.inner-detail .detail {
+    color: var(--secondary);
+    line-height: 1.4rem;
+}
+
+.inner-detail .tech-stack {
+    font-family: "sfMono";
+    font-size: .8rem;
+    margin-top: .6rem;
+}
+
+
+.show-btn{
+    margin-top: 4rem;
+    font-size: .8rem;
+}
