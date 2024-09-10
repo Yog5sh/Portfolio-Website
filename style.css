@@ -585,7 +585,70 @@ h1 {
 }
 
 
-.show-btn{
+.show-btn {
     margin-top: 4rem;
     font-size: .8rem;
+}
+
+
+
+
+
+/* ------------------- contact section css ------------------- */
+
+
+.contact-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+.contact-container .title a,
+.title {
+    font-size: 1.2rem;
+    color: var(--primary);
+}
+
+.contact-container .getInTouch {
+    font-size: 4rem;
+    color: var(--namesecondary);
+}
+
+.contact-container .opportunity {
+    text-align: center;
+    color: var(--secondary);
+    font-size: 1.2rem;
+}
+
+.contact-container .sayHello {
+    margin-top: 3rem;
+}
+
+
+/* ------------------------ footer section ---------------------- */
+
+
+.footer-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .4rem;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.footer-container a {
+    font-size: .8rem;
+    color: var(--secondary);
+    font-family: "sfMono";
+}
+
+.footer-container a:nth-child(2) {
+    margin-bottom: 3rem;
 }
