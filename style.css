@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: var(--bColor);
+    width: 100%;
+    height: 100%;
+}
+
 @font-face {
     font-family: "cNedium";
     src: url("assests/font-family/CalibreMedium.otf");
@@ -40,9 +46,7 @@
 
 }
 
-body {
-    background-color: var(--bColor);
-}
+
 
 a {
     text-decoration: none;
@@ -161,12 +165,24 @@ h1 {
     margin-bottom: 14rem;
     font-size: 2.2rem;
     font-family: "cSemibold";
+    color: var(--secondary);
+    transition: transform .15s ease;
+}
+
+.email:hover{
+    transform: translateX(-.3rem);
     color: var(--primary);
 }
 
 .right-icon a .fa-brands {
     font-size: 1.8rem;
-    color: var(--primary);
+    color: var(--secondary);
+    transition: transform .15s ease;
+}
+
+.right-icon a .fa-brands:hover{
+    transform: translateY(-.3rem);
+ color: var(--primary);
 }
 
 .right-icon a .fa-twitter {
@@ -190,7 +206,7 @@ h1 {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
+  justify-content: center;
 
 }
 
@@ -324,7 +340,18 @@ h1 {
     aspect-ratio: 1;
     position: relative;
     border-radius: 5px;
+    transition: transform .1s ease-in-out;
 }
+
+.photo-container .photo:hover img {
+    transform: translate(-.3rem ,-.3rem);
+}
+
+.photo-container .photo:hover::before{
+    transform: translate(.3rem ,.3rem);
+}
+
+
 
 
 .photo-container .photo {
@@ -340,11 +367,13 @@ h1 {
     top: 8px;
     width: 16rem;
     aspect-ratio: 1;
+    transition: transform .1s ease-in-out;
 }
 
 .lang-grid {
     display: flex;
     gap: 2rem;
+   
 }
 
 .col .lang {
@@ -360,6 +389,12 @@ h1 {
     color: var(--primary);
 }
 
+
+.about-container .about-details .skills{
+    color: var(--primary);
+    margin-bottom: -15px;
+    margin-left: 10px;
+}
 
 
 
@@ -392,6 +427,7 @@ h1 {
     height: 100%;
     position: absolute;
     border-radius: 5px;
+    transition: background-color .5s ease-in;
 }
 
 .img:hover::before {
@@ -530,6 +566,15 @@ h1 {
 .cards {
     width: 290px;
     background-color: var(--card-color);
+    transition: transform .1s ease-in-out;
+}
+
+.cards:hover {
+    transform: translateY(-.6rem);
+}
+
+.cards:hover .inner-detail .title {
+    color: var(--primary);
 }
 
 .inner-card {
@@ -538,7 +583,6 @@ h1 {
     gap: 1rem;
     padding: 1.5rem;
 }
-
 
 .inner-card .icons {
     display: flex;
@@ -566,7 +610,7 @@ h1 {
 }
 
 
-.inner-detail .title {
+.inner-detail  .title {
     margin-top: .4rem;
     font-size: 1.4rem;
     font-family: "cSemibold";
@@ -651,4 +695,43 @@ h1 {
 
 .footer-container a:nth-child(2) {
     margin-bottom: 3rem;
+}
+
+
+
+
+
+
+
+/* ////// ---------------------- Responsiveness -------------------- //////// */
+
+
+/* //              Mobile           */
+
+@media (max-width: 480px) {
+
+    .side {
+        display: none;
+    }
+    
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        background-color: rgb(151, 22, 22);
+    }
+    
+    .side {
+        display: none;
+    }
+   
+
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background-color: blue;
+    }
 }
